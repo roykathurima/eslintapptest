@@ -1,0 +1,10 @@
+#!/bin/bash
+DIR = $(pwd)
+
+echo ${DIR}
+
+yarn precommit
+
+result = ($?)
+
+echo $result
