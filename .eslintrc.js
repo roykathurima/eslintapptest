@@ -2,13 +2,8 @@ const prettierConfig = require('./package.json').prettier;
 
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: [
-    'ts-react-important-stuff',
-    'airbnb-typescript',
-    'prettier',
-    'eslint-config-prettier',
-  ],
-  plugins: ['eslint-plugin-prettier'],
+  extends: ['ts-react-important-stuff', 'airbnb-typescript', 'eslint-config-prettier', 'prettier'],
+  plugins: ['eslint-plugin-prettier', 'eslint-plugin-react', 'eslint-plugin-import'],
   parserOptions: {
     project: './tsconfig.json',
   },
@@ -21,10 +16,7 @@ module.exports = {
       files: ['**/*.tsx'],
       rules: {
         'import/prefer-default-export': 'off',
-        'import/no-extraneous-dependencies': [
-          'error',
-          { devDependencies: true },
-        ],
+        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
         'react/prop-types': 'off',
         'func-style': ['error', 'expression', { allowArrowFunctions: true }],
       },

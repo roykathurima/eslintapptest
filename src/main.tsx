@@ -1,20 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { gql, useQuery, ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
-import './index.css'
-import App from './App'
-
-const initClient = () =>
-  new ApolloClient({
-    cache: new InMemoryCache(),
-    uri: 'http://localhost:4000/'
-  });
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={initClient()}>
-      <App />
-    </ApolloProvider>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
-)
+);

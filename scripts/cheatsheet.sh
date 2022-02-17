@@ -6,7 +6,7 @@
 # Variables
 # Uppercase by convention
 # Can contain letters, numbers, underscores
-# NAME="Jake"
+NAME="Riley"
 # echo "My name is $NAME"
 # echo "My name is ${NAME}"
 
@@ -19,6 +19,11 @@
 # then
 #     echo "Your name is Riley"
 # fi
+
+# Simple IF statement continutation
+if [[ "$NAME" == "Riley" ]] ; then
+    echo "Your name is Riley"
+fi
 
 # if-else
 # if [ "$NAME" == "Riley" ]
