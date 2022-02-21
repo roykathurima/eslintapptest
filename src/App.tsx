@@ -4,7 +4,6 @@ import './App.css';
 
 const App = function () {
   const [count, setCount] = useState(0);
-  const name = "Kathurima"
   return (
     <div className="App">
       <header className="App-header">
