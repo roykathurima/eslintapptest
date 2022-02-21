@@ -1,11 +1,11 @@
 #!/bin/bash
 
-DIR = $(pwd)
+DIR=$(pwd)
 
 echo ${DIR}
 
 yarn precommit
 
-result = ($?)
-
-echo $result
+RESULT=$?
+printf 'The precommit exit status: %d' $RESULT
+exit $RESULT
