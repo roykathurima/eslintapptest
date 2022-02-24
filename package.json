@@ -26,7 +26,6 @@
     "@typescript-eslint/parser": "^5.12.0",
     "@vitejs/plugin-react": "^1.0.7",
     "eslint": "^8.2.0",
-    "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-diwala": "../linter-package",
     "eslint-config-prettier": "^8.3.0",
